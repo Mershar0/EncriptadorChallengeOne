@@ -13,6 +13,20 @@ function tValidate (){
   const regex = /^[a-z\sñ]+$/g;
   const isValid = regex.test(valid);
 
+  if (!valid){
+    alert("No se ha ingresado ningún texto, por favor agregue el texto que desea desencriptar.");
+    document.getElementById("muneco").style.display = "show";
+    document.getElementById("muneco").style.display = "inherit";
+    document.getElementById("msg_title").style.display = "show";
+    document.getElementById("msg_title").style.display = "inherit";
+    document.getElementById("paragraph").style.display = "show";
+    document.getElementById("paragraph").style.display = "inherit";
+    document.getElementById("copyButton").style.display = "none";
+    document.getElementById("listenButton").style.display = "none";
+    document.getElementById("textOut").style.display = "none";
+    return;
+  }
+
   if (!isValid) {
     alert ("Sólo se aceptan letras minúsculas y sin tilde.")
     document.getElementById("textIn").value = '';
@@ -25,6 +39,7 @@ function tValidate (){
     document.getElementById("copyButton").style.display = "none";
     document.getElementById("listenButton").style.display = "none";
     document.getElementById("textOut").style.display = "none";
+    return;
   }
 
 }
