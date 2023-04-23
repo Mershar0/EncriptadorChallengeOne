@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="postencrip.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="icon" href="imagenes/Logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="logo">
+                <img src="imagenes/Logo.png" alt="letra a, de color azul">
+            </div>
+
+            <div class="encryptText">
+                <textarea name="textIn" class="textIn" id="textIn" cols="30" rows="10" placeholder="Ingrese el texto aquí" pattern></textarea>
+            </div>
+
+            <div class="terms">
+                <img src="imagenes/excl without backgroung.png" style="height: 25px; width: 47px;">
+                <p>Sólo letras minúsculas y sin tildes.</p>
+            </div>
+
+            <div class="buttons">
+                <button class="encryptButton" id="encryptButton" type="button">Encriptar</button>
+                <button class="decryptButton" id="decryptButton" type="button">Desencriptar</button>
+            </div>
+
+            <div class="encrypted">
+                <img src="imagenes/Muñeco.png" id="muneco">
+
+                <div class="encrypted_msg" id="encrypted_msg">
+                    <h2 id="msg_title">Ningún mensaje fue encontrado</h2>
+                    <p id="paragraph">Ingresa el texto que desees encriptar o desencriptar.</p>                    
+                </div>
+
+                <div class="divTextOut">
+                    <textarea name="textOut" id="textOut" cols="30" rows="10" class="textOut"></textarea>
+                </div>
+
+
+                <div class="buttons_2">
+                    <button class="copyButton" id="copyButton" type="button">Copiar</button>
+                    <button class="listenButton" id="listenButton" type="button">&#128266;</button>
+                </div> 
+            
+            </div>
+
+            <div class="creditsTo">
+                <div class="socialM">
+                        
+                    <a href="https://www.linkedin.com/in/merany-reinoso-md/" style="text-decoration:none"><i class="fa fa-linkedin-square" style="font-size:36px; color:#5188cc"></i> </a>
+                    
+                    <a href="https://github.com/Mershar0" class="github" style="text-decoration:none"><i class="fa fa-github-square" style="font-size:36px; color:#db9df3"></i></a>
+
+                </div>
+
+                <p class="copyright">&copy Encriptador de texto - Mersha - versión 2023</p>
+            </div>
+
+        </div>
+        
+    </body>
+
+    <script src="postencrip.js"></script>
+</html>

@@ -1,0 +1,443 @@
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(137deg, rgba(255,255,255,1) 0%, rgba(122,77,199,0.711922268907563) 39%, rgba(2,45,117,0.8939950980392157) 62%);
+}
+
+.logo{
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 6.5%;
+    top: 5%;
+}
+
+.textIn{
+    position: absolute;
+    width: 35%;
+    height: 45%;
+    left: 19.9%;
+    top: 15%;
+
+    border: none;
+    resize: none;
+    background: none;
+    outline: none;
+
+    font-family:'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #ffffff;
+    
+}
+
+textarea::placeholder{
+    color: #0A3871;
+    opacity: 1;
+}
+
+.terms{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 19.9%;
+    top: 70%;
+}
+
+.terms p{
+    font-family:'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;    
+}
+
+.buttons{
+    display: flex; 
+    flex-direction:row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 19.9%;
+    top: 73%;
+    
+}
+
+.encryptButton{
+    align-items: center;
+    justify-content: center;
+    padding: 1.2%;
+    gap: 8px;
+    width: 20%;
+
+    background: #022d75;
+    border-radius: 24px;
+    border: 1px solid #FFFFFF;
+
+    font-family:'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+
+    /* White */
+
+    color: #FFFFFF;
+
+    transition: 0.5s all;
+    cursor:pointer;
+}
+
+.encryptButton:hover{
+    background: rgb(219, 157, 243);
+    transform: scale(1.02);
+}
+
+.decryptButton{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.2%;
+    gap: 8px;
+    width: 20%;
+
+    background: #ebe0ff;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family:'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+
+   margin: 0 0 0 10px;
+
+    color: #0A3871;
+    
+    transition: 0.5s all;
+    cursor:pointer;
+}
+
+.decryptButton:hover{
+    background: rgb(61, 122, 172);
+    transform: scale(1.02);
+}
+
+.encrypted{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    left: 60%;
+    top: 10%;
+    background: #ebe0ff;
+    
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.encrypted img{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    top: 15%;
+}
+
+.encrypted_msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    text-align: center;
+}
+
+
+.encrypted_msg h2{
+    width: 60%;
+    font-family:'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+
+    color: #0A3871;
+}
+
+.encrypted_msg p{
+    width: 80%;
+    font-family:'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.divTextOut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    text-align: center;
+}
+
+.textOut{
+    font-family:'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    position: absolute;
+    width: 75%;
+    top: -295%;
+    
+    color: #0A3871;
+    
+    display: none;
+    resize: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.buttons_2{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2% 0;
+    position: absolute;
+    width: 90%;
+    left: 25%;
+    top: 80%;
+}
+
+.listenButton{
+    align-items: center;
+    justify-content: center;
+    padding: 5.2%;
+    width: 17%;
+    height: 5%;
+
+    line-height: 7px;
+
+    background: #0A3871;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+
+    margin: 5px 0 0 5px;
+
+    transition: 0.5s all;
+    cursor:pointer;
+
+    display: none;
+}
+
+.listenButton:hover{
+    background: #4985cf;
+    transform: rotate(360deg);
+}
+
+.copyButton{
+    align-items: center;
+    justify-content: center;
+    padding: 5.2%;
+    gap: 8px;
+    width: 25%;
+
+    background: #8e4797;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+
+    margin: 5px 0 0 13px;
+
+    font-family:'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 7px;
+    text-align: center;
+
+    /* White */
+
+    color: #FFFFFF;
+
+    transition: 0.5s all;
+    cursor:pointer;
+
+    display: none;
+   
+}
+
+.copyButton:hover{
+    background: #aa29bbbe;
+    transform: scale(1.02);
+}
+
+
+.creditsTo{
+    position: absolute;
+    width: 72%;
+    
+    top: 90%;
+
+    align-items: center;
+    padding: 0;
+
+    color: #FFFFFF;
+    font-family:'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    
+}
+
+.socialM{
+    margin: 0 0 15px 0;
+}
+
+/* Responsive design ----------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 57.5em) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo{
+        left: 0.1%;
+        top: 4%;
+    }
+    
+    .encryptText{
+        width: 100%;
+    }
+
+    .textIn{
+        width: 80%;
+        height: 35%;
+        left: 10%;
+        top: 13%;
+    }
+
+    .terms{
+        width: 80%;
+        left: 10%;
+        top: 50%;
+    }
+
+    .terms p{
+        font-size: 16px;
+    }
+
+    .buttons{
+        width: 80%;
+        left: 10%;
+        top: 53.5%;
+        display: block;
+    }
+
+    .encryptButton, .decryptButton{
+        width: 80%;
+        border-radius: 35px;
+        margin: 0 0 6px 35px;
+        padding: 12px;
+    }
+
+
+    .encrypted{
+        width: 80%;
+        height: 23.5%;
+        left: 10%;
+        top: 65%;
+        background-color: #ae9ad3;
+    }
+
+    .encrypted img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+    .encrypted_msg{
+        width: 100%;
+        top: 5%;
+    }
+
+    .encrypted_msg h2{
+        font-size: 22px;
+    }
+
+    .encrypted_msg p{
+        font-size: 16px;
+    }
+
+    .textOut{
+        width: 80%;
+        top: 5%;
+        max-height: 117px;
+        font-size: 24px;
+    }
+
+    .buttons_2{
+        padding: 2% 0;
+        top: 72%;
+    }
+
+    .copyButton{
+        background: #8564c2a4;
+        border: 1.5px solid #FFFFFF;
+        
+    }
+
+    .listenButton{
+        background: #8564c2a4;
+        border: 1.5px solid #FFFFFF;
+    }
+
+    .creditsTo{
+        width: 100%;
+        font-size: 14px;
+        top: 92.5%;
+    }
+
+    .socialM{
+        margin: 0 0 6px 0;
+    }
+}
